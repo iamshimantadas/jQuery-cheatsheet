@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email id verify</title>
+</head>
+<body>
+    
+<form action="">
+<label for="gen">Select gender</label>
+<br><br>
+<input type="checkbox" class="Selectbox" id="male">
+<label for="male">MALE</label>
+<br>
+<input type="checkbox" class="Selectbox" id="female">
+<label for="female">FEMALE</label>
+</form>
+
+
+
+</body>
+<script src="jquery.js"></script>
+<script>
+    $('.Selectbox').on('change', function() {
+        $('.Selectbox').not(this).prop('checked', false);  
+    });
+</script>
+</html>

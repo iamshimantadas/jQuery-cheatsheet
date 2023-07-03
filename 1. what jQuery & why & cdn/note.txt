@@ -1,0 +1,21 @@
+1. jQuery basically a javascript library, which helps to implement javascript
+in a efficient manner.
+
+2. it has lot of functions which to 
+maniulate HTML DOM
+CSS manipulation,
+perform animations,
+apply AJAX tasks etc.
+in easy way.
+
+3. we can apply jQuery via CDN or offline minified file inclusion.
+
+jQuery is a JavaScript library which helps to implement JavaScript into website in easy way.
+It contains many functions which helps to done DIM manipulation, CSS manipulation or even helps to perform animations easily.
+
+jQuery supports all the major browser like Chrome , Microsoft edge, Firefox, Opera etc.
+
+jQuery runs on a principal that "write less, do more with javascript".
+
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML class selector</title>
+    <style>
+        .para1{
+            max-width: 500px;
+            color: red;
+            font-size: 20px;
+        }
+        .para2{
+            max-width: 500px;
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+<br><br>
+
+<p class="para1">
+    Years and years ago, once there was a lion sleeping in the forest under a big tree. A mouse, who lived in the forest too, started playing while moving up and down the lion’s body. She also accidentally ran across the lion’s nose once. 
+</p>
+
+<br><br>
+
+<p class="para2">
+    After a few days, the mouse suddenly heard the roar of the lion. When she went to look at what’s the matter, she found out that the lion was captured and trapped in a net by his prey. Seeing the lion in such a condition, she immediately started gnawing the ropes of the net until it freed the lion. 
+</p>
+
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.para1').click(function(){
+            alert("paragraph 1 get clicked!");
+        });
+        $('.para2').click(function(){
+         $('.para2').hide();   
+        });
+    });
+</script>
+</html>

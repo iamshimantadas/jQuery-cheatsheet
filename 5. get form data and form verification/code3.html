@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" id="passwordInput">
+<button id="checkPasswordBtn">Check Password</button>
+<p id="passwordValidity"></p>
+
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function() {
+  $('#checkPasswordBtn').click(function() {
+    var password = $('#passwordInput').val();
+    var isValid = validatePassword(password);
+    $('#passwordValidity').text(isValid ? 'Password is valid!' : 'Password is invalid!');
+  });
+});
+
+function validatePassword(password) {
+  var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_\-+=~`[\]{}|:;"'<>,.?/]).{8,}$/;
+  return passwordRegex.test(password);
+}
+</script>
+</html>

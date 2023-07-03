@@ -1,0 +1,13 @@
+we can get form data using val() function.
+
+// getting input box data using val() function
+input box data: $('selector').val();
+select box data(boolean): $('selector').is(":checked")
+input box:date data: $('selector').val();
+
+
+code 1: Indian 10 digit number 
+code 2: Select any one checkbox - male/female/other
+code 3: Password identify - 8 digit minimum - uppercase, lowercase, digit and special character. 
+code 4: Check both password same or not.
+code 5: Dob select - minimum 15 max 35

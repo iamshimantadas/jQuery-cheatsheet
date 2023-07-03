@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check both password identity</title>
+</head>
+<body>
+    
+<form action="">
+    <label for="password">Enter password</label>
+    <input type="text" id="password">
+    <br>
+    <br>
+    <label for="confirmPassword">Confirm password</label>
+    <input type="text" id="confirmPassword">
+    <br>
+    <br>
+    <input type="submit" id="submit">
+</form>
+
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#submit').click(function(){
+            let p1 = $('#password').val();
+        let p2 = $('#confirmPassword').val();
+        // checks both password 
+        if(p1==p2){
+            console.log('password matched!');
+        }
+        else{
+            alert('PASSWORDS NOT MATCHED!');
+        }
+        });
+        
+    });
+</script>
+</html>

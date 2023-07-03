@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getting form data</title>
+</head>
+<body>
+
+    
+    <!-- input box -->
+<input type="text" placeholder="Enter name" id="name">
+<br><br>
+<!-- checkbox  -->
+<input type="checkbox" id="male">
+<label for="male">MALE</label>
+<input type="checkbox" id="female">
+<label for="female">FEMALE</label>
+<br>
+<br>
+<!-- selectbox -->
+<select id="calltime">
+<option value="9AM TO 1PM">9AM TO 1PM</option>
+<option value="5PM TO 8PM">5PM TO 8PM</option>
+</select>
+<br>
+<br>
+<!-- date input -->
+<input type="date" id="udate">
+<br>
+<br>
+<button id="btn1">get data</button>
+
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#btn1').click(function(){
+            let Name = $('#name').val();
+            if($('#male').is(":checked")){
+                let M = 'MALE';
+                console.log(M);
+            }
+            if($('#female').is(":checked")){
+                let F = 'FEMALE';
+                console.log(F);
+            }
+            let call = $('#calltime').val();
+            let Date = $('#udate').val();
+
+            console.log(Name);
+            console.log(call);
+            console.log(Date);
+
+        });
+    });
+</script>
+</html>

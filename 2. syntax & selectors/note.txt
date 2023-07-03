@@ -1,0 +1,48 @@
+The jQuery syntax is specifically designed for selecting HTML elements and applying actions to them.
+
+The basic syntax follows this structure: $(selector).action()
+
+Here's a breakdown of the components:
+
+- The dollar sign ($) is used to define and access the jQuery library.
+
+- The selector represents the HTML element(s) you want to target or "query."
+
+- The action refers to the operation you want to perform on the selected element(s).
+
+Let's take a look at some examples:
+
+1. $(this).hide()
+This code hides the current element. It is often used in event handlers to hide the element that triggered the event.
+
+2. $("p").hide()
+In this case, all <p> elements on the page will be hidden. The "p" selector selects all paragraph elements, and the hide() action is applied to hide them.
+
+By leveraging this syntax, you can perform various operations on HTML elements with ease. jQuery provides a wide range of actions, such as showing and hiding elements, modifying CSS properties, handling events, making AJAX requests, and much more. The flexibility and simplicity of the jQuery syntax make it a popular choice among developers for manipulating and enhancing web pages.
+
+
+---------------------------------------------------------------------------------
+SELECTORS
+note: we can use single or double quotes for selectors.
+
+1. Element selector: used when a specific specific HTML element get selected. 
+synatx: 
+ $(document).ready(function(){
+        $('element 1').action();
+        $("element 2").action();
+});
+
+2. ID selector: used when a specific specific HTML element by ID get selected. 
+synatx:
+ $(document).ready(function(){
+        $('#element1').action();
+        $("#element2").action();
+});
+
+3. class selector: used when a specific specific HTML element by class get selected. 
+synatx:
+ $(document).ready(function(){
+        $('.class1').action();
+        $(".class2").action();
+});
+

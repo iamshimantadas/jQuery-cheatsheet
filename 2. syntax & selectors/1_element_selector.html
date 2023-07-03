@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>element selector</title>
+</head>
+<body>
+    
+    <br>
+    <br>
+
+    <!-- on button click alert message generated -->
+    <button>click me</button>
+
+    <br>
+    <br>
+    <!-- on paragraph click console message  -->
+    <p>
+        this is a sort paragrah on click console msg will be generated
+    </p>
+
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('button').click(function(){
+            alert('button clicked!');
+        });
+        $("p").click(function(){
+            console.log("paragraph get clicked!");
+        });
+    });
+</script>
+</html>

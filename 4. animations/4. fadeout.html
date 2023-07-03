@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade out</title>
+</head>
+<body>
+    
+<br>
+<br>
+<button id="btn1">fade out</button>
+
+
+<br>
+<br>
+
+<p id="para1">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum corrupti soluta nulla impedit quae voluptate animi molestiae possimus dignissimos nesciunt tenetur, sequi a, nostrum autem dolorem illum magnam enim veniam.
+</p>
+
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#btn1').click(function(){
+            $('#para1').fadeOut(2000);
+        });
+    });
+</script>
+</html>

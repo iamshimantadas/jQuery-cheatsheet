@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate age by date</title>
+</head>
+<body>
+    <!-- input box type = 'date' -->
+    <input type="date" id="birthdate">
+<button id="calculateAge">Calculate Age</button>
+<p id="result"></p>
+
+</body>
+<script src="jquery.js"></script>
+<script>
+     $(document).ready(function() {
+    $('#calculateAge').click(function() {
+      var birthdate = new Date($('#birthdate').val());
+      var today = new Date();
+      var age = today.getFullYear() - birthdate.getFullYear();
+      
+      // Adjust the age if the birthdate hasn't occurred yet this year
+      if (
+        today.getMonth() < birthdate.getMonth() ||
+        (today.getMonth() === birthdate.getMonth() &&
+          today.getDate() < birthdate.getDate())
+      ) {
+        age--;
+      }
+      
+      $('#result').text('Your age is ' + age);
+      let calAge = age;
+      if(calAge>15 && !(calAge>35)){
+        console.log('age accepted!');
+        
+      }
+      else{
+        alert('your age is: '+age);
+        alert('age limit between 15-35 years');
+      }
+    });
+  });
+</script>
+</html>

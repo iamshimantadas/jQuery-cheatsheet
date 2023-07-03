@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <br>
+    <br>
+    <!-- simple click event via button -->
+    <button id="btn1">click me one time</button>
+
+    <br>
+    <br>
+    <!-- two times click event via button -->
+    <button id="btn2">click me 2 time</button>
+    
+    <br>
+    <br>
+    <!-- mouse enter event -->
+    <p class="para1"> click this paragraph to hide below</p>
+    <br>
+    <p class="para2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur voluptatem enim placeat expedita perferendis harum dolore minima, quas quidem tenetur labore officia earum pariatur aperiam velit, nesciunt eum vitae tempora?
+    </p>
+
+
+    <br>
+    <br>
+    <!-- mouse hover effect -->
+    <p id="para3">
+        Once, an elderly farmer lived in a village. He had four sons. They always argued with one another. The farmer made numerous attempts to bring them together, but they were unwilling to pay heed to his counsel. He was extremely concerned for their future.
+    </p>
+
+
+    <br>
+    <br>
+    <!-- disfocus~ blur event  -->
+    <form action="">
+        <input type="text" id="box1">
+    </form>
+
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#btn1').click(function(){
+            alert('one time button clicked!');
+        });
+        $('#btn2').dblclick(function(){
+            alert("2 times button clicked!");
+        });
+        $('.para1').mouseenter(function(){
+            $('.para2').hide();
+        });
+        $('#para3').hover(function(){
+            // alert('hovered over paragraph!');
+        });
+        $('#box1').blur(function(){
+            console.error('blur/disfocus function triggered!');
+        });
+    });
+</script>
+</html>

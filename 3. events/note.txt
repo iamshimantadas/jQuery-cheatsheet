@@ -1,0 +1,12 @@
+jQuery events are the actions that can be detected by your web application. They are used to create dynamic web pages. An event shows the exact moment when something happens. These are some examples of events: a mouse click, an HTML form submission, a web page loading, a keystroke on the keyboard¹. 
+
+jQuery provides several methods for event handling such as `.click()`, `.dblclick()`, `.mouseenter()`, `.mouseleave()`, `.keydown()`, `.keyup()`, etc.
+
+
+let's talk about events:
+1.click: when we perform click event on HTML elements. ex: buttons, paragraph, image etc.
+2. dblclick: when we click HTML element for 2 times suddenly.
+3. mouseenter: when mouse pointer hovered over that HTML element.
+4. blur: basically works like dis-focus from a HTML element.
+
+

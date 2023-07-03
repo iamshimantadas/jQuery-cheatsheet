@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check indian 10 digit number</title>
+</head>
+<style>
+    .hidden{
+  display: none;
+}
+</style>
+<body>
+    
+<input type="text" placeholder="Enter your 10 digit number" id="unumber">
+<br>
+<br>
+<button id="btn1">check</button>
+
+
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#btn1').click(function(){
+            let NUM = $('#unumber').val();
+            // checks number start with 6/7/8/9
+        if(NUM.charAt(9)||NUM.charAt(8)||NUM.charAt(7)||NUM.charAt(6)){
+            // check number length need to be 0 digit
+            if(NUM.length==10){}
+            else{
+                alert('NUMBER LENGTH MUST BE 10 DIGIT!');
+            }
+        }else{
+            alert('ENTER VALID NUMBER STARTS WITH 6/7/8/9 ... ');
+        }
+        });
+    });
+</script>
+</html>

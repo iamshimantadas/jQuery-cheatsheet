@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide</title>
+</head>
+<body>
+    
+    <button id="btn1">click to hide below paragraph</button>
+
+<br>
+<br>
+
+<p class="para1">
+    A Lion lay asleep in the forest, his great head resting on his paws. A timid little Mouse came upon him unexpectedly, and in her fright and haste to get away, ran across the Lion's nose. Roused from his nap, the Lion laid his huge paw angrily on the tiny creature to kill her.
+"Spare me!" begged the poor Mouse. "Please let me go and some day I will surely repay you."
+The Lion was much amused to think that a Mouse could ever help him. But he was generous and finally let the Mouse go.
+</p>
+
+
+<br>
+<br>
+
+<!-- hide paragraph with delay -->
+<button id="btn2">click me hide paragraph with delay</button>
+
+<br>
+<br>
+
+<p class="para2">
+    Vivekananda, original name Narendranath Datta, Datta also spelled Dutt, (born January 12, 1863, Calcutta [now Kolkata]—died July 4, 1902, near Calcutta), Hindu spiritual leader and reformer in India who attempted to combine Indian spirituality with Western material progress, maintaining that the two supplemented and complemented one another. His Absolute was a person’s own higher self; to labour for the benefit of humanity was the noblest endeavour.
+</p>
+
+</body>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+    $('#btn1').click(function(){
+        $('.para1').hide();
+    });
+    $('#btn2').click(function(){
+        $('.para2').hide(2000);
+    });
+});
+</script>
+</html>

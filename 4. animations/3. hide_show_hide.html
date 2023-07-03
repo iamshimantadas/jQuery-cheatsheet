@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIDE->SHOW->HIDE</title>
+</head>
+<body>
+    
+<p id="para1">
+Learn code for free | Java, Python, PHP & Dart etc. | learn MySQL, MongoDB etc.
+</p>
+
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#para1').hide();
+        $('#para1').show(4000);
+        $('#para1').hide(3000);
+    });
+</script>
+</html>

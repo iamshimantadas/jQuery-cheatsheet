@@ -1,0 +1,18 @@
+we can apply some cool animation effects using jquey effects... 
+let's see
+
+HIDE EFFECT
+1. hide() -> only hides HTML element
+2. hide(parameter) -> hides HTML element with delay.
+
+SHOW EFFECT
+1. show() -> show HTML element.
+2. show(parameter) -> show HTML element with delay.
+
+
+HIDE->SHOW->HIDE
+
+
+Fade in/fade out
+1. fade in -> show fade in effect  
+2. fade out -> fade out effect over HTML element.
