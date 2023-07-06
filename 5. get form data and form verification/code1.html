@@ -24,16 +24,37 @@
     $(document).ready(function(){
         $('#btn1').click(function(){
             let NUM = $('#unumber').val();
-            // checks number start with 6/7/8/9
-        if(NUM.charAt(9)||NUM.charAt(8)||NUM.charAt(7)||NUM.charAt(6)){
-            // check number length need to be 0 digit
-            if(NUM.length==10){}
+            
+             // check number length need to be 0 digit
+             if(NUM.length==10){
+                // typecasing first number strung character to int
+                let ph = parseInt(NUM.charAt(0));
+                // checks number start with 6/7/8/9
+                switch(ph){
+                    case 9:
+                        // write you logic here ... 
+                        break;
+                        case 8:
+                        // write you logic here ... 
+                        break;
+                        case 7:
+                        // write you logic here ... 
+                        break;
+                        case 6:
+                        // write you logic here ... 
+                        break;
+                        default:
+                            alert("number may start with 6/7/8/9");
+                            break;
+                }
+            }
             else{
                 alert('NUMBER LENGTH MUST BE 10 DIGIT!');
             }
-        }else{
-            alert('ENTER VALID NUMBER STARTS WITH 6/7/8/9 ... ');
-        }
+        
+
+        
+
         });
     });
 </script>
